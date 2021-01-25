@@ -43,7 +43,7 @@ class AboutModules < Neo::Koan
   end
 
   def test_module_methods_are_also_available_in_the_object
-    fido = og.new
+    fido = Dog.new
     assert_nothing_raised do
       fido.set_name("Rover")
     end
